@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #36281a;
+    font-family:'EB Garamond', serif ;
+    font-weight:800;
 }
 
 
@@ -9,12 +15,18 @@ main{
     background-color: #daae9062;
     min-height: 600px;
     padding: 8px 8px;
+    background-image: url(../img/fondo_prueba2.jpg);
+    background-size: cover;
+
+    
 
 }
+
 
 header{
     height: 150px;
     background-image: url(../img/bolsa_cafe_2.jpeg);
+    background-size: cover;
 
 }
 
@@ -32,13 +44,14 @@ header > div{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    background-color: #de7307c9;
+    background-color: #e2c697;
 
 }
 
 
 .header__cartel__titulo{
     margin: auto;
+    font-style: italic;
 
 }
 
@@ -99,6 +112,9 @@ nav > ul > li > a{
 .empresa__quienesSomos{
     display: flex;
     padding: 16px;
+    border:3px solid black;
+    border-radius: 16px;
+    margin: 32px;
 
 }
 
@@ -112,7 +128,11 @@ nav > ul > li > a{
 .empresa__quienesSomos__foto{
     height: 300px;
     width: 600px;
-
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
 }
 
 
@@ -120,6 +140,11 @@ nav > ul > li > a{
     display: flex;
     flex-direction: row-reverse;
     padding: 16px;
+    border:3px solid black;
+    border-radius: 16px;
+    margin: 32px;
+    
+
     
 }
 
@@ -133,6 +158,11 @@ nav > ul > li > a{
 .empresa__queHacemos__foto{
     height: 300px;
     width: 600px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  
 
 }
 
@@ -140,6 +170,9 @@ nav > ul > li > a{
 .empresa__porqueHacemos{
     display: flex;
     padding: 16px;
+    border:3px solid black;
+    border-radius: 16px;
+    margin: 32px;
 
 }
 
@@ -153,5 +186,9 @@ nav > ul > li > a{
 .empresa__porqueHacemos__foto{
     height: 300px;
     width: 600px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 
 }

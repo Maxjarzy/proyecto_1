@@ -23,51 +23,19 @@ header{
     height: 150px;
     background-image: url(../img/fondo_header.jpg);
     background-size: cover;
-
-}
-
-
-header > div{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-
-.header__cartel{
-    display: flex;
-    width: 100%;
-    height: 30px;
-    background-color: #36281a;
-    
+    background-position-y: 228px;
     
 
-}
-
-
-.header__cartel__titulo{
-    margin: auto;
-    color: #DBDBDB;
-    font-weight: 200;
-
-}
-
-
-.header__cartel__boton{
-    margin: 0px 8px;
-    background-color: transparent;
-  
 }
 
 
 .header__logo{
     height: 100px;
     width: 100px;
-    margin: auto 16px;
-
-
+    margin-left: 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
 }
 
 
@@ -110,24 +78,62 @@ nav > ul > li > a{
 }
 
 
+nav > ul > li > a:hover{
+    background-color: black;
+    color:#DBDBDB;
+
+}
+
+main section{
+    width: 70%;
+    margin: auto;
+    padding-left: 32px;
+    
+}
+
+
 /* La Empresa */
+
+
+h1{
+    margin-left: 320px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 500;
+
+}
 
 .empresa__quienesSomos{
     display: flex;
     border: 1px solid black;
-    margin-bottom: 40px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
     
 }
 
 
 .empresa__quienesSomos h2{
     margin-bottom: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.empresa__quienesSomos p{
+    font-size: 18px;
+    font-weight: 400;
 }
 
 
 .empresa__quienesSomos__texto{
     margin: 32px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
     
 }
 
@@ -135,7 +141,7 @@ nav > ul > li > a{
 .empresa__quienesSomos__foto{
     height:400px;
     width: 600px;
-   
+    align-self: center;
 }
 
 
@@ -143,13 +149,32 @@ nav > ul > li > a{
     display: flex;
     flex-direction: row-reverse;
     border: 1px solid black;
-    margin-bottom: 40px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
    
 }
 
 
+.empresa__queHacemos h2{
+    margin-bottom: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.empresa__queHacemos p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
 .empresa__queHacemos__texto{
-    margin-left: 32px;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -157,6 +182,8 @@ nav > ul > li > a{
 .empresa__queHacemos__foto{
     height: 400px;
     width: 600px;
+    align-self: center;
+    
 
 }
 
@@ -165,12 +192,33 @@ nav > ul > li > a{
     display: flex;
     border: 1px solid black;
     margin-bottom: 40px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
     
 }
 
 
+.empresa__porqueHacemos h2{
+    margin-bottom: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.empresa__porqueHacemos p{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
 .empresa__porqueHacemos__texto{
-    margin-right: 32px;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -178,14 +226,23 @@ nav > ul > li > a{
 .empresa__porqueHacemos__foto{
     height: 400px;
     width: 600px;
+    align-self: center;
+
+}
+
+
+hr{
+    margin: 100px auto;
+    width: 60%;
+    align-self: center;
 
 }
 
 
 footer{
     height: 150px;
-    border-top: 1px solid black;
-    background-color:#36281a ;
+    background-color: black; 
+    margin-top: 100px;
 }
 
 
@@ -195,18 +252,207 @@ footer > div{
     justify-content: space-around;
     align-items: center;
     color: #DBDBDB;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+
+.footer__redes{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+
+footer  div a{
+    text-decoration: none;
+    color: #DBDBDB;
+    width: fit-content;
+    padding: 8px;
+
+}
+
+
+footer  div a:hover{
+    color: #36281a;
+
+}
+
+
+.footer__logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+
+/* Tienda */
+
+.productos{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+
+.productos__tarjeta{
+    width: 270px;
+    height: 380px;
+    padding: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 16px;
+    margin-bottom: 32px;
+
+}
+
+.productos__tarjeta_separacion{
+    margin: 8px;
+    width: 80%;
+
+}
+
+
+.procuctos__tarjeta__foto{
+    width: 200px;
+    height: 250px;
+
+}
+
+
+.productos__tarjeta h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: auto 0;
+    text-align: center;
+
+}
+
+.productos__tarjeta p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: auto 0;
+
+}
+
+
+.productos__tarjeta a{
+    border-radius: 5px;
+    background-color: #e1261c;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin-top: 14px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
     font-weight: 200;
 
 }
 
 
-footer > div > div > a{
-    text-decoration: none;
-    color: #DBDBDB;
+.productos__tarjeta a:hover{
+    background-color: rgba(0, 0, 0, 0.897);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
 
 }
 
-footer > div > div > ul{
-    list-style-type: none;
+
+/* Recorrido */
+
+
+.recorrido__informacion{
+    display: flex;
+    border: 1px solid black
+
 }
 
+
+.recorrido__informacion div{
+    margin: 32px;
+
+}
+
+
+.recorrido__informacion div h4{
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+
+.recorrido__informacion div p{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+.recorrido__informacion__reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    
+}
+
+
+.recorrido__informacion__reverse div{
+    margin: 32px;
+
+}
+
+
+.recorrido__informacion__reverse div h4{
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+
+.recorrido__informacion__reverse div p{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+.recorrido__presentacion p{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+.recorrido__presentacion h4{
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+
+.recorrido__presentacion img{
+    width: 400px;
+    height: 600px;
+}
+
+
+video{
+    width: 600px;
+    height: 400px;
+}

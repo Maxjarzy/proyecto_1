@@ -5,19 +5,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #36281a;
     font-family:'EB Garamond', serif ;
     font-weight:800;
 }
 
 
 main{
-    background-color: #daae9062;
     min-height: 600px;
     padding: 8px 8px;
-    background-image: url(../img/fondo_prueba2.jpg);
-    background-size: cover;
-
+    
     
 
 }
@@ -25,7 +21,7 @@ main{
 
 header{
     height: 150px;
-    background-image: url(../img/bolsa_cafe_2.jpeg);
+    background-image: url(../img/fondo_header.jpg);
     background-size: cover;
 
 }
@@ -43,15 +39,18 @@ header > div{
 .header__cartel{
     display: flex;
     width: 100%;
-    justify-content: flex-end;
-    background-color: #e2c697;
+    height: 30px;
+    background-color: #36281a;
+    
+    
 
 }
 
 
 .header__cartel__titulo{
     margin: auto;
-    font-style: italic;
+    color: #DBDBDB;
+    font-weight: 200;
 
 }
 
@@ -59,8 +58,7 @@ header > div{
 .header__cartel__boton{
     margin: 0px 8px;
     background-color: transparent;
-    border: none;
-
+  
 }
 
 
@@ -73,13 +71,10 @@ header > div{
 }
 
 
-img{
-    width: 100%;
-}
-
 nav{
-    background-color: #36281a;
-    height: 32px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: fit-content;
 
 }
 
@@ -87,7 +82,7 @@ nav > ul{
     height: 100%;
     display: flex;
     list-style-type: none;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 8px;
     margin: auto 8px auto 0px;
 
@@ -95,15 +90,23 @@ nav > ul{
 
 
 nav > ul > li{
-    margin: auto 8px;
-
+    border-left: 1px solid black;
+    
 }
 
+
+nav > ul > li:last-child{
+    border-right: 1px solid black;
+}
+
+
 nav > ul > li > a{
+    display: block;
     text-decoration: none;
     color:black;
-    padding: 8px;
-
+    padding: 8px 30px;
+    font-size: 20px;
+    
 }
 
 
@@ -111,41 +114,37 @@ nav > ul > li > a{
 
 .empresa__quienesSomos{
     display: flex;
-    padding: 16px;
-    border:3px solid black;
-    border-radius: 16px;
-    margin: 32px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    
+}
 
+
+.empresa__quienesSomos h2{
+    margin-bottom: 16px;
 }
 
 
 .empresa__quienesSomos__texto{
-    margin-right: 32px;
-
+    margin: 32px;
+    
+    
 }
 
 
 .empresa__quienesSomos__foto{
-    height: 300px;
+    height:400px;
     width: 600px;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    
+   
 }
 
 
 .empresa__queHacemos{
     display: flex;
     flex-direction: row-reverse;
-    padding: 16px;
-    border:3px solid black;
-    border-radius: 16px;
-    margin: 32px;
-    
-
-    
+    border: 1px solid black;
+    margin-bottom: 40px;
+   
 }
 
 
@@ -156,24 +155,17 @@ nav > ul > li > a{
 
 
 .empresa__queHacemos__foto{
-    height: 300px;
+    height: 400px;
     width: 600px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  
 
 }
 
 
 .empresa__porqueHacemos{
     display: flex;
-    padding: 16px;
-    border:3px solid black;
-    border-radius: 16px;
-    margin: 32px;
-
+    border: 1px solid black;
+    margin-bottom: 40px;
+    
 }
 
 
@@ -184,11 +176,37 @@ nav > ul > li > a{
 
 
 .empresa__porqueHacemos__foto{
-    height: 300px;
+    height: 400px;
     width: 600px;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
 
 }
+
+
+footer{
+    height: 150px;
+    border-top: 1px solid black;
+    background-color:#36281a ;
+}
+
+
+footer > div{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #DBDBDB;
+    font-weight: 200;
+
+}
+
+
+footer > div > div > a{
+    text-decoration: none;
+    color: #DBDBDB;
+
+}
+
+footer > div > div > ul{
+    list-style-type: none;
+}
+

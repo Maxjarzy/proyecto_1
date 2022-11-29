@@ -370,14 +370,15 @@ footer  div a:hover{
 
 .recorrido__informacion{
     display: flex;
-    border: 1px solid black
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
 
 }
 
 
 .recorrido__informacion div{
     margin: 32px;
-
+    
 }
 
 
@@ -402,6 +403,7 @@ footer  div a:hover{
     display: flex;
     flex-direction: row-reverse;
     border: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
     
 }
 
@@ -429,9 +431,20 @@ footer  div a:hover{
 }
 
 
+.recorrido__presentacion{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    padding: 32px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+    
+}
+
+
 .recorrido__presentacion p{
     font-size: 18px;
     font-weight: 400;
+    margin: 32px;
 
 }
 
@@ -447,8 +460,11 @@ footer  div a:hover{
 
 
 .recorrido__presentacion img{
-    width: 400px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
+    align-self: center;
+    margin-top: 32px;
+    
 }
 
 

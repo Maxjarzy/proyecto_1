@@ -479,8 +479,8 @@ video{
 
 
 .formulario{
-    width: 70%;
-    height: 400px;
+    width: 50%;
+    height: 450px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
@@ -495,14 +495,17 @@ video{
     display: flex;
     flex-direction: column;
     width: 300px;
-    align-items: center
-    
+    align-items: center;
+    margin-top: auto;    
+    margin-bottom: auto;
+
 }
 
 
-.formulario > label{
+.formulario  label{
     font-size: 20px;
     font-weight: 200;
+    width: 100%;
 }
 
 
@@ -515,6 +518,7 @@ video{
     justify-content: center;
     font-weight: 200;
     border-radius: 5px;
+    border: 1px solid black;
     
 
 }
@@ -532,15 +536,34 @@ video{
 }
 
 
-.formulario__cliente{
+.formulario__email{
     margin: 32px 0;
-    
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
 
 }
 
 
-.formulario__empleado{
+.formulario__email::placeholder{
+    text-align: center;
+
+}
+
+
+.formulario__contraseña{
     margin: 32px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+
+.formulario__contraseña::placeholder{
+    text-align: center;
 
 }
 
@@ -563,4 +586,107 @@ video{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.897);
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
+
+}
+
+
+/* Contactos */
+
+.contacto{
+    width: 70%;
+    height: 700px;
+    margin: 32px auto;
+    display: flex;
+    border: 1px solid black;
+    padding: 32px;
+    align-items: center;
+
+}
+
+
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-right: 16px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+
+.contacto form label{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 16px 0;
+    text-align: center;
+
+}
+
+
+.contacto form label input{
+    width: 80%;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+
+.contacto form label input::placeholder{
+    text-align: center;
+
+}
+
+
+.contacto form label textarea{
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+
+.contacto form label textarea::placeholder{
+    text-align: center;
+
+}
+
+
+.contacto__boton{
+    background-color: #e1261c;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+    margin: 32px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    width: 200px;
+
+}
+
+
+.contacto__boton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.897);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
+
+}
+
+
+.contacto__ubicacion{
+    width: 50%;
+    border: 1px solid black;
+
+}
+
+
+.contacto div ul{
+    list-style-type: none;
+
 }

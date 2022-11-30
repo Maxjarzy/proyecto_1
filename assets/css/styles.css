@@ -10,6 +10,12 @@
 }
 
 
+body{
+    min-width:1500px;
+
+}
+
+
 main{
     min-height: 600px;
     padding: 8px 8px;
@@ -35,6 +41,8 @@ header{
     margin-left: 16px;
     margin-top: 25px;
     margin-bottom: 25px;
+    position: fixed;
+
     
 }
 
@@ -108,9 +116,11 @@ h1{
     display: flex;
     border: 1px solid black;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 400px;
     
-}
 
+}
 
 .empresa__quienesSomos h2{
     margin-bottom: 16px;
@@ -133,7 +143,6 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     
 }
 
@@ -141,7 +150,7 @@ h1{
 .empresa__quienesSomos__foto{
     height:400px;
     width: 600px;
-    align-self: center;
+   
 }
 
 
@@ -150,6 +159,8 @@ h1{
     flex-direction: row-reverse;
     border: 1px solid black;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 400px;
    
 }
 
@@ -182,8 +193,6 @@ h1{
 .empresa__queHacemos__foto{
     height: 400px;
     width: 600px;
-    align-self: center;
-    
 
 }
 
@@ -193,6 +202,8 @@ h1{
     border: 1px solid black;
     margin-bottom: 40px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 400px;
     
 }
 
@@ -226,7 +237,6 @@ h1{
 .empresa__porqueHacemos__foto{
     height: 400px;
     width: 600px;
-    align-self: center;
 
 }
 
@@ -613,6 +623,7 @@ video{
     align-items: center;
     justify-content: center;
     border: 1px solid black;
+    padding: 32px 100px;
 
 }
 
@@ -622,12 +633,13 @@ video{
     font-weight: 200;
     margin: 16px 0;
     text-align: center;
+    width: 80%;
 
 }
 
 
 .contacto form label input{
-    width: 80%;
+    width: 100%;
     height: 32px;
     border-radius: 5px;
     border: 1px solid black;
@@ -642,7 +654,7 @@ video{
 
 
 .contacto form label textarea{
-    width: 90%;
+    width: 100%;
     height: 200px;
     border-radius: 5px;
     border: 1px solid black;
@@ -652,6 +664,7 @@ video{
 
 .contacto form label textarea::placeholder{
     text-align: center;
+    
 
 }
 
@@ -681,12 +694,23 @@ video{
 
 .contacto__ubicacion{
     width: 50%;
-    border: 1px solid black;
+    height: 100%;
+
 
 }
 
 
 .contacto div ul{
     list-style-type: none;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
 
+
+.contacto div ul li{
+    font-weight: 200;
+    margin-top: 8px;
+    text-align: center;
 }

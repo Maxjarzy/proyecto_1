@@ -437,14 +437,14 @@ footer  div a:hover{
     border:1px solid black;
     padding: 32px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
-    
+
 }
 
 
 .recorrido__presentacion p{
     font-size: 18px;
     font-weight: 400;
-    margin: 32px;
+    
 
 }
 
@@ -471,4 +471,96 @@ footer  div a:hover{
 video{
     width: 600px;
     height: 400px;
+
+}
+
+
+/* Login */
+
+
+.formulario{
+    width: 70%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center
+    
+}
+
+
+.formulario > label{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+
+
+.formulario__fieldset{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    border-radius: 5px;
+    
+
+}
+
+
+.formulario__fieldset > legend{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.formulario__fieldset input{
+    margin-left: 32px;
+
+}
+
+
+.formulario__cliente{
+    margin: 32px 0;
+    
+
+}
+
+
+.formulario__empleado{
+    margin: 32px 0;
+
+}
+
+
+.formulario__boton{
+    background-color: #e1261c;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+    margin: 32px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+
+}
+
+
+.formulario__boton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.897);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
 }

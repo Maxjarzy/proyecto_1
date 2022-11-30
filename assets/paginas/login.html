@@ -25,23 +25,24 @@
     <main>
         <h1>Login</h1>
 
-            <form action="" enctype="application/x-www-form-urlencoded">
+            <form class="formulario" action="" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <label>Email
+                        <input class="formulario__cliente" type="email" name="" placeholder="ejemplo@ejemplo.com ">
+                    </label>
 
-                <label>Email
-                    <input type="email" name="" placeholder="ejemplo@ejemplo.com ">
-                </label>
+                    <label>Contraseña
+                        <input class="formulario__empleado" type="password" name="" placeholder="********">
+                    </label>
+                </div>
 
-                <label for="">Contraseña
-                    <input type="password" name="" placeholder="xxxxxx">
-                </label>
-
-                <fieldset>
+                <fieldset class="formulario__fieldset">
                     <legend>Soy...</legend>
-                    <input type="radio" name="quien_soy" id="">Cliente
-                    <input type="radio" name="quien_soy" id="">Empleado
+                    <input type="radio" name="quien_soy" id=""> Cliente
+                    <input type="radio" name="quien_soy" id=""> Empleado
                  </fieldset>
 
-                <input type="submit" value="Ingresar">
+                <input class="formulario__boton" type="submit" value="Ingresar">
             </form>
     </main>
 

@@ -712,4 +712,28 @@ video{
     font-weight: 200;
     margin-top: 8px;
     text-align: center;
+
 }
+
+
+
+/* Galeria */
+
+
+
+.galeria .galeria__contenedor img{
+    width: 50%;
+    height: 50%;
+}
+
+.galeria{
+    display:grid;
+    width: 50%;
+    height: 500px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+
+.

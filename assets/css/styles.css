@@ -726,32 +726,143 @@ video{
 }
 
 
-
 /* Galeria */
+
 
 .galeria{
     display: grid;
-    grid-template-columns: 100px 200px 80px 150px auto;
-    grid-template-rows: 200px 80px 150px auto 100px;
+    grid-template-columns: 100px 200px 80px 150px 225px auto;
+    grid-template-rows: 200px 80px 150px 90px 130px;
     grid-gap: 8px;
 
 }
 
 
-.galeria div img{
-    width: 100%;
+.galeria .galeria__imagen{
     height: 100%;
-    object-fit: cover;
-    margin: auto;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 
-.galeria div:active{
+.galeria__imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+
+}
+
+
+.galeria__imagen img:hover{
+    transform: scale(1.1);
+
+}
+
+
+.popup{
     position: fixed;
-    display: block;
-    height: 400px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+
+}
+
+.popup span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+
+.popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
     width: 70%;
-    padding: 32px 16px;
-    background-color: grey;
+    height: 70%;
+    object-fit: contain;
+    background-color: black;
+   
+}
+
+
+.galeria .galeria__imagen:nth-child(1){
+    grid-column:1/3;
+    grid-row: 1/3;
+
+}
+
+
+.galeria__imagen:nth-child(2){
+    grid-column: 3/5;
+    grid-row: 1/4;
+
+}
+
+
+.galeria__imagen:nth-child(3){
+    grid-column: 5/6;
+    grid-row: 1/5;
+
+}
+
+
+.galeria__imagen:nth-child(4){
+    grid-column:6/7;
+    grid-row: 1/3;
+
+}
+
+
+.galeria__imagen:nth-child(5){
+    grid-column: 1/2;
+    grid-row: 3/6;
+
+}
+
+
+.galeria__imagen:nth-child(6){
+    grid-column: 2/3;
+    grid-row: 3/5;
+
+}
+
+
+.galeria__imagen:nth-child(7){
+    grid-column: 3/5;
+    grid-row: 4/6;
+
+}
+
+
+.galeria__imagen:nth-child(8){
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+
+.galeria__imagen:nth-child(9){
+    grid-column: 6/7;
+    grid-row: 3/5;
+
+}
+
+
+.galeria__imagen:nth-child(10){
+    grid-column: 5/7;
 
 }

@@ -32,20 +32,21 @@
         <h1>Login</h1>
 
             <form class="formulario" action="" enctype="application/x-www-form-urlencoded">
-                <div>
-                    <label>Email
-                        <input class="formulario__email" type="email" name="" placeholder="ejemplo@ejemplo.com " required>
-                    </label>
+                
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control formulario__email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.com " required>
+                    </div>
 
-                    <label>Contraseña
-                        <input class="formulario__contraseña" type="password" name="" placeholder="*************************" required>
-                    </label>
-                </div>
-
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control formulario__contraseña" id="exampleInputPassword1" placeholder="*************************" required>
+                    </div>
+                    
                 <fieldset class="formulario__fieldset">
                     <legend>Soy...</legend>
-                    <input type="radio" name="quien_soy" id="" required> Cliente
-                    <input type="radio" name="quien_soy" id="" required> Empleado
+                    <input type="radio" name="quien_soy" required>Cliente
+                    <input type="radio" name="quien_soy" required>Empleado
                  </fieldset>
 
                 <input class="formulario__boton" type="submit" value="Ingresar">

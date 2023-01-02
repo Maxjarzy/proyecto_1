@@ -1,0 +1,53 @@
+.productos{
+    display: flex;
+    flex-wrap:wrap;
+    @media (max-width:575px) {
+        justify-content: center;
+    }
+    >.productos__tarjeta{
+        width: 270px;
+        height: 380px;
+        padding: 8px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 16px;
+        margin-bottom: 32px;
+        >.productos__tarjeta_separacion{
+            margin: 8px;
+            width: 80%;
+        }
+        >.procuctos__tarjeta__foto{
+            width: 200px;
+            height: 250px;
+        }
+        >h4{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            margin: auto 0;
+            text-align: center;
+        }
+        >p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            margin: auto 0;
+        }
+        >a{
+            border-radius: 5px;
+            background-color: #e1261c;
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            margin-top: 14px;
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+            font-weight: 200;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.897);
+                box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
+            }
+        }  
+    }
+}

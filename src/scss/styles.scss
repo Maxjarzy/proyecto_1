@@ -1,0 +1,107 @@
+$colorLogo: rgba(54, 40, 26, 0.935);
+$colorLetra: black;
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'EB Garamond', serif ;
+    font-weight:800;
+}
+
+@import "header";
+@import "main";
+@import "footer";
+
+/* Inicio */
+
+@import "inicio";
+
+/* Productos */
+
+@import "tienda";
+
+/* Galeria */
+
+@import "galeria";
+
+/* Recorrido */
+
+@import "recorrido";
+
+/* Login */
+
+@import "login";
+
+/* Contactos */
+
+@import "contactos";
+
+
+/* Carga */
+
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 100;
+    >img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        animation-name: rotar;
+        animation-duration: 4s;
+        animation-iteration-count:initial;
+    }
+}
+
+
+@keyframes rotar {
+    0%{
+        transform:rotateZ(0deg) scale(1,1);
+        
+    }
+    13%{
+        transform: rotateZ(45deg) scale(2,2);
+    
+    }
+    25%{
+        transform:rotateZ(90deg) scale(1,1);
+
+    }
+    38%{
+        transform:rotateZ(135deg) scale(2,2);
+
+    }
+    50%{
+        transform:rotateZ(180deg) scale(1,1);
+
+    }
+    63%{
+        transform:rotateZ(225deg) scale(2,2);
+
+    }
+    75%{
+        transform:rotateZ(270deg) scale(1,1);
+
+    }
+    78%{
+        transform:rotateZ(315deg) scale(2,2);
+
+    }
+    100%{
+        transform:rotateZ(360deg) scale(1,1);
+
+    }
+    
+}
+

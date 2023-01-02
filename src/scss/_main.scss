@@ -1,0 +1,27 @@
+main{
+    min-height: 600px;
+    padding: 8px 8px; 
+    @media (max-width:575px){
+        min-height: 100vh;
+    }
+    >h1{
+        margin-left: 320px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        font-size: 40px;
+        font-weight: 500;
+        @media (max-width:575px) {
+            margin:0;
+            text-align: center;
+            margin: 32px 0;
+        }
+    }
+    >section{
+        width: 70%;
+        margin: auto;
+        padding-left: 32px;
+        @media (max-width:575px){
+            padding: 0;
+        }
+    }
+}

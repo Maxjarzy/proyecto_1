@@ -1,0 +1,41 @@
+.section__recorrido{
+    padding: 0;
+    >hr{
+        margin: 70px auto;
+        width: 60%;
+        align-self: center;
+        }
+    >.card{
+        border: 1px solid black;
+        --bs-card-border-radius: 0;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+        z-index: 0;
+        .recorrido__video{
+            padding: 16px;
+            > video{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }  
+        }
+        .recorrido__reverso{
+            flex-direction: row-reverse;
+        }
+        > img{
+            width: 50%;
+            height: 50%;
+            margin: 16px;
+            align-self: center;
+        }
+         .card-body{
+            > p{
+                text-align: center;
+            }
+            > h5{
+                border: 1px solid black;
+                text-align: center;
+                padding: 4px 0;
+                }
+        }
+    }
+}

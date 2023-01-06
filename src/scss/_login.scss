@@ -72,15 +72,11 @@
         }
  }
  >.formulario__boton{
-    background-color: #e1261c;
+    @include boton;
     border: none;
     padding: 8px 32px;
-    border-radius: 5px;
-    color: white;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
     margin: 32px 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
     &:hover{
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.897);

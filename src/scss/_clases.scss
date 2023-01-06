@@ -1,0 +1,7 @@
+
+
+@each $color, $codigo in (logo: rgba(54, 40, 26, 0.935), negro:rgba(0,0,0)){
+            .color-#{$color}{
+                background-color: $codigo;
+            }
+}

@@ -12,96 +12,31 @@ $colorLetra: black;
     font-weight:800;
 }
 
+
+
+/* SASS */
+
+@import "clases";
+@import "mixings";
+
+/* Partes */
+
 @import "header";
 @import "main";
 @import "footer";
 
-/* Inicio */
+
+
+/* Paginas */
 
 @import "inicio";
-
-/* Productos */
-
 @import "tienda";
-
-/* Galeria */
-
 @import "galeria";
-
-/* Recorrido */
-
 @import "recorrido";
-
-/* Login */
-
 @import "login";
-
-/* Contactos */
-
 @import "contactos";
 
 
 /* Carga */
 
-.loading{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    z-index: 100;
-    >img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        width: 200px;
-        height: 200px;
-        animation-name: rotar;
-        animation-duration: 4s;
-        animation-iteration-count:initial;
-    }
-}
-
-
-@keyframes rotar {
-    0%{
-        transform:rotateZ(0deg) scale(1,1);
-        
-    }
-    13%{
-        transform: rotateZ(45deg) scale(2,2);
-    
-    }
-    25%{
-        transform:rotateZ(90deg) scale(1,1);
-
-    }
-    38%{
-        transform:rotateZ(135deg) scale(2,2);
-
-    }
-    50%{
-        transform:rotateZ(180deg) scale(1,1);
-
-    }
-    63%{
-        transform:rotateZ(225deg) scale(2,2);
-
-    }
-    75%{
-        transform:rotateZ(270deg) scale(1,1);
-
-    }
-    78%{
-        transform:rotateZ(315deg) scale(2,2);
-
-    }
-    100%{
-        transform:rotateZ(360deg) scale(1,1);
-
-    }
-    
-}
 

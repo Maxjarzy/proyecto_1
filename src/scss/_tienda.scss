@@ -34,16 +34,12 @@
             margin: auto 0;
         }
         >a{
-            border-radius: 5px;
-            background-color: #e1261c;
+            @include boton;
             text-decoration: none;
-            color: white;
             padding: 8px;
             margin-top: 14px;
             box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 13px;
-            font-weight: 200;
             &:hover{
                 background-color: rgba(0, 0, 0, 0.897);
                 box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);

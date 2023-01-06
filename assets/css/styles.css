@@ -8,6 +8,16 @@
   font-weight: 800;
 }
 
+/* SASS */
+.color-logo {
+  background-color: rgba(54, 40, 26, 0.935);
+}
+
+.color-negro {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Partes */
 header {
   height: 198px;
   background-image: url(../img/fondo_header.jpg);
@@ -144,6 +154,57 @@ header > nav > .menu {
   }
 }
 
+/* Carga */
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 100;
+}
+.loading > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  animation-name: rotar;
+  animation-duration: 4s;
+  animation-iteration-count: initial;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotateZ(0deg) scale(1, 1);
+  }
+  13% {
+    transform: rotateZ(45deg) scale(2, 2);
+  }
+  25% {
+    transform: rotateZ(90deg) scale(1, 1);
+  }
+  38% {
+    transform: rotateZ(135deg) scale(2, 2);
+  }
+  50% {
+    transform: rotateZ(180deg) scale(1, 1);
+  }
+  63% {
+    transform: rotateZ(225deg) scale(2, 2);
+  }
+  75% {
+    transform: rotateZ(270deg) scale(1, 1);
+  }
+  78% {
+    transform: rotateZ(315deg) scale(2, 2);
+  }
+  100% {
+    transform: rotateZ(360deg) scale(1, 1);
+  }
+}
 main {
   min-height: 600px;
   padding: 8px 8px;
@@ -180,7 +241,6 @@ main > section {
 
 footer {
   height: 150px;
-  background-color: black;
   margin-top: 100px;
 }
 @media (max-width: 575px) {
@@ -235,7 +295,7 @@ footer > div .footer__logo {
   }
 }
 
-/* Inicio */
+/* Paginas */
 .inicio__section {
   display: flex;
   flex-direction: column;
@@ -267,7 +327,6 @@ footer > div .footer__logo {
   text-align: center;
 }
 
-/* Productos */
 .productos {
   display: flex;
   flex-wrap: wrap;
@@ -308,23 +367,22 @@ footer > div .footer__logo {
   margin: auto 0;
 }
 .productos > .productos__tarjeta > a {
-  border-radius: 5px;
   background-color: #e1261c;
-  text-decoration: none;
+  border-radius: 5px;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  text-decoration: none;
   padding: 8px;
   margin-top: 14px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
-  font-weight: 200;
 }
 .productos > .productos__tarjeta > a:hover {
   background-color: rgba(0, 0, 0, 0.897);
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
 }
 
-/* Galeria */
 .galeria {
   display: grid;
   grid-template-columns: 100px 200px 80px 150px 225px auto;
@@ -469,7 +527,6 @@ footer > div .footer__logo {
   background-color: black;
 }
 
-/* Recorrido */
 .section__recorrido {
   padding: 0;
 }
@@ -512,7 +569,6 @@ footer > div .footer__logo {
   padding: 4px 0;
 }
 
-/* Login */
 .formulario {
   width: 50%;
   height: 450px;
@@ -595,14 +651,14 @@ footer > div .footer__logo {
 }
 .formulario > .formulario__boton {
   background-color: #e1261c;
-  border: none;
-  padding: 8px 32px;
   border-radius: 5px;
   color: white;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
-  margin: 32px 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
+  border: none;
+  padding: 8px 32px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
+  margin: 32px 0;
 }
 .formulario > .formulario__boton:hover {
   cursor: pointer;
@@ -610,7 +666,6 @@ footer > div .footer__logo {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.541);
 }
 
-/* Contactos */
 .contacto {
   width: 70%;
   height: 700px;
@@ -727,53 +782,3 @@ footer > div .footer__logo {
 }
 
 /* Carga */
-.loading {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  z-index: 100;
-}
-.loading > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  animation-name: rotar;
-  animation-duration: 4s;
-  animation-iteration-count: initial;
-}
-
-@keyframes rotar {
-  0% {
-    transform: rotateZ(0deg) scale(1, 1);
-  }
-  13% {
-    transform: rotateZ(45deg) scale(2, 2);
-  }
-  25% {
-    transform: rotateZ(90deg) scale(1, 1);
-  }
-  38% {
-    transform: rotateZ(135deg) scale(2, 2);
-  }
-  50% {
-    transform: rotateZ(180deg) scale(1, 1);
-  }
-  63% {
-    transform: rotateZ(225deg) scale(2, 2);
-  }
-  75% {
-    transform: rotateZ(270deg) scale(1, 1);
-  }
-  78% {
-    transform: rotateZ(315deg) scale(2, 2);
-  }
-  100% {
-    transform: rotateZ(360deg) scale(1, 1);
-  }
-}

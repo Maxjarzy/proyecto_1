@@ -268,6 +268,9 @@ footer > div > .footer__redes {
   flex-direction: column-reverse;
   align-items: center;
 }
+footer > div > .footer__redes > p {
+  text-align: center;
+}
 @media (max-width: 575px) {
   footer > div > a {
     display: none;
@@ -317,6 +320,15 @@ footer > div .footer__logo {
 }
 .inicio__section > .card > div > div > img {
   --bs-border-radius: 0;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .inicio__section > .card > div > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+  }
 }
 .inicio__section > .card > div > div > .card-body > h5 {
   border: 1px solid black;
@@ -325,6 +337,11 @@ footer > div .footer__logo {
 }
 .inicio__section > .card > div > div > .card-body > p {
   text-align: center;
+}
+.inicio__section > .card > div .card__imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .productos {
@@ -780,5 +797,3 @@ footer > div .footer__logo {
   margin-top: 8px;
   text-align: center;
 }
-
-/* Carga */

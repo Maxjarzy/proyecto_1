@@ -20,6 +20,9 @@ footer{
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
+            >p{
+                text-align: center;
+            }
         }
         >a{
             @media (max-width:575px) {  

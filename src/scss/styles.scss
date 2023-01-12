@@ -10,6 +10,16 @@ $colorLetra: black;
     box-sizing: border-box;
     font-family:'EB Garamond', serif ;
     font-weight:800;
+    list-style-type: none
+}
+
+h1{
+    @media(min-width:576px) and (max-width:991px){
+        margin-left: 150px;
+    }
+    @media(min-width:991px){
+        margin-left: 300px;
+    }
 }
 
 

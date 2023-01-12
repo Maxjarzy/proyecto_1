@@ -4,8 +4,12 @@
     @media (max-width:575px) {
         justify-content: center;
     }
+    @media(min-width:991px){
+        padding-left: 0;
+        justify-content: center;
+    }
     >.productos__tarjeta{
-        width: 270px;
+        width: 250px;
         height: 380px;
         padding: 8px;
         border: 1px solid black;

@@ -1,3 +1,8 @@
+.recorrido__titulo{
+    @media(min-width:575px) and (max-width:991px){
+           margin-left: 125px;
+    }
+}
 .section__recorrido{
     padding: 0;
     >hr{
@@ -10,6 +15,17 @@
         --bs-card-border-radius: 0;
         box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
         z-index: 0;
+        >.row{
+            @media(min-width:575px) and (max-width:991px){
+                flex-direction: column;
+            }
+            @media(min-width:991px){
+                flex-direction: row;
+            }
+            div{
+                width: 100%;
+            }
+        }
         .recorrido__video{
             padding: 16px;
             > video{
@@ -20,6 +36,9 @@
         }
         .recorrido__reverso{
             flex-direction: row-reverse;
+            @media(min-width:575px) and (max-width:991px){
+                flex-direction: column;
+            }
         }
         > img{
             width: 50%;
@@ -30,6 +49,7 @@
             border-bottom-right-radius: 0;
         }
          .card-body{
+            width: 100%;
             > p{
                 text-align: center;
             }

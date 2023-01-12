@@ -1,122 +1,150 @@
 header{
+    background-image: url(../../assets/img/fondo_header.jpg);
+    width:100%;
     height: 198px;
-    background-image: url(../img/fondo_header.jpg);
     background-size: cover;
     background-position-y: 228px;
-    @media (max-width:575px) {
-        height: 50px;
+    display: flex;
+    flex-direction: column;
+    @media(max-width:575px){
         background-image: none;
+        height: 50px;
     }
-        .header__logo{
-            height: 100px;
-            width: 100px;
-            margin-left: 16px;
-            margin-top: 25px;
-            margin-bottom: 25px;
-            @media(max-width:575px) {
-                display: none;
-            }
+    >.header__logo{
+        width: 100px;
+        height:100px;
+        margin: 25px 0 25px 16px;
+        @media(max-width:575px){
+            display: none;
         }
-        >nav{
+    }
+    >nav{
+        display: flex;
+        flex-direction: column;
+        height: 48px;
+        background-color: white;
+        @media (max-width:575px) {
+            background-image: url(../../assets/img/fondo_lista.jpg);
+            background-size: cover;
+            justify-content: flex-start;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            border-top: none;
+        }
+        >.menu{
+            display: none;
+            @media (max-width:575px) {
+                display: block;
+                font-size: 40px;
+                color: black;
+                margin: auto 0 auto 32px ;
+                &:hover + ul{
+                    left:0;
+                }
+            }
+
+        }
+        >ul{
+            display: flex;
+            height: 47px;
+            width: 100%;
+            padding-left: 0;
+            margin-bottom: 0;
+            justify-content: center;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
-            height: fit-content;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: white;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
             @media (max-width:575px) {
+                position: fixed;
+                left: -400px;
+                flex-direction: column;
+                background-color: $colorLogo;
+                z-index: 100;
+                width: 50vw;
+                height: 100vh;
+                margin-top: 48px;
+                transition: 0.5s ease-in;
                 background-image: url(../../assets/img/fondo_lista.jpg);
                 background-size: cover;
+                border-top: 1px solid black;
                 justify-content: flex-start;
-                height: 50px;
-                position: fixed;
-                z-index: 100;
-                border-top: none;
+                
             }
-            > ul{
-                height: 100%;
+            >li{
                 display: flex;
-                list-style-type: none;
-                justify-content: center;
-                padding: 0;
-                margin: auto 0px auto 0px;
-                @media (max-width:575px) {
-                    position: fixed;
-                    left: -400px;
-                    flex-direction: column;
-                    background-color: $colorLogo;
-                    z-index: 100;
-                    width: 50vw;
-                    height: 100vh;
-                    margin-top: 48px;
-                    transition: 0.5s ease-in;
-                    background-image: url(../../assets/img/fondo_lista.jpg);
-                    background-size: cover;
-                    border-top: 1px solid black;
-                    
-                }
-                > li{
-                    border-left: 1px solid black;
-                    width: 100%;
-                    @media (max-width:575px) {
-                        border: none;
+                align-items: center;
+                height: 46px;
+                @for $i from 1 to 8{
+                    @if($i==1){
+                        border-left: none;
                     }
-                    &:nth-child(1){
-                        display: none;
-                        @media (max-width:575px) {
-                             display: block;
-                             text-align: center;
-                             margin-top: 40vh;
-                             margin-bottom: 10vh;
-                        }
-                        >.menu__logo{
-                            @media (max-width:575px) {
-                                width: 100px;
-                                height: 100px;
-                                margin:8px 0 8px 0;
+                    @else if($i == 7){
+                        &:nth-child(#{$i}){
+                            width: fit-content;
+                            display: inline-block;
+                            text-decoration: none;
+                            color:black;
+                            border-right: 1px solid black;
+                            border-left: 1px solid black;
+                            @media(max-width:575px){
+                                border:none;
+                                width: 100%;
                             }
-                        }
-                    }
-                    &:last-child{
-                        border-right: 1px solid black;
-                        @media (max-width:575px) {
-                            border: none;
-                            margin-bottom: 65vh;
-                        }
-                    }
-                    > a{
-                        display: block;
-                        text-decoration: none;
-                        color:$colorLetra;
-                        padding: 8px 30px;
-                        font-size: 20px;   
-                        transition: 0.2s;
-                        &:hover{
-                            background-color: black;
-                            color:#DBDBDB;
-                            @media (max-width:575px) {
-                                background-color: rgba(0, 0, 0, 0.562);
                             }
-                        }
-                        
+                    }
+                     @else{
+                        &:nth-child(#{$i}){
+                            width: fit-content;
+                            display: inline-block;
+                            text-decoration: none;
+                            color:black;
+                            border-left: 1px solid black;
+                            @media(max-width:575px){
+                                border: none;
+                                width: 100%;
+                            }
+                            }
                     } 
-                }
-            }
-            >.menu{
-                display: none;
-                @media (max-width:575px) {
-                    display: block;
-                    font-size: 40px;
-                    color: black;
-                    margin: auto 0 auto 32px ;
-                    &:hover + ul{
-                        left:0;
+                 } 
+                >img{
+                    display: none;
+                    @media (max-width:575px) {
+                        display: block;
                     }
                 }
+                >a{
+                    display:block;
+                    height: 46px;
+                    padding: 10px 32px;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: $colorLetra;
+                        color:white
+                    }
+                    @media(min-width:576px) and (max-width:991px){
+                    display: flex;
+                    font-size: 16px;
+                    padding: 10px 16px;
+                    align-self: center;
+                    }
+                }
+                &:first-child{
+                   height: 200px;
+                   justify-content: center;
+                   @media(min-width:576px) and (max-width:991px){
+                    height: 0;
+                }
+                }
             }
+                        
         }
+ 
+    }
 }
-
-
-

@@ -1,3 +1,4 @@
+
 .inicio__section{
     display: flex;
     flex-direction: column;
@@ -17,6 +18,8 @@
          }
          >div{
              >div{
+                display: flex;
+                justify-content: center;
                  > img{
                      --bs-border-radius: 0;
                  }

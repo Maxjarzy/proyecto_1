@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     >hr{
      margin: 70px auto;
      width: 60%;
@@ -15,11 +18,36 @@
          z-index: 0;
          >.card__porqueHacemos{
              flex-direction: row-reverse;
+             >div{
+                @media (max-width:575px) {
+                    display: flex;
+                    justify-content: center;
+                }
+                @media (min-width: 576px) and (max-width:767px) {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 16px;
+                }
+                @media(min-width:768px){
+                    display: flex;
+                    justify-content: end;
+                }
+             }
          }
          >div{
              >div{
-                display: flex;
-                justify-content: center;
+                @media (max-width:575px) {
+                    display: flex;
+                    justify-content: center;
+                }
+                @media (min-width: 576px) and (max-width:767px) {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 16px;
+                }
+                @media(min-width:768px){
+                    display: flex;
+                }
                  > img{
                      --bs-border-radius: 0;
                  }

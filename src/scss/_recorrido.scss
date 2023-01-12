@@ -1,10 +1,8 @@
-.recorrido__titulo{
-    @media(min-width:575px) and (max-width:991px){
-           margin-left: 125px;
-    }
-}
 .section__recorrido{
     padding: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     >hr{
         margin: 70px auto;
         width: 60%;
@@ -22,8 +20,11 @@
             @media(min-width:991px){
                 flex-direction: row;
             }
-            div{
+            >div{
                 width: 100%;
+                @media(min-width:992px){
+                    width:50%;
+                }
             }
         }
         .recorrido__video{
@@ -50,6 +51,9 @@
         }
          .card-body{
             width: 100%;
+            @media(min-width:992px){
+                width:100%
+            }
             > p{
                 text-align: center;
             }

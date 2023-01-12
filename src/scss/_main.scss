@@ -23,44 +23,35 @@
 
 
 @keyframes rotar {
-    0%{
-        transform:rotateZ(0deg) scale(1,1);
+    
+    $grado: 0deg;
+    $acumulador: 0;
+    @for $i from 0 through 8{
+        $h: $i % 2;
         
+    @if($i == 0){
+        #{$acumulador}%{
+                transform: rotateZ(0deg) scale(1, 1);
+                $acumulador: $acumulador + 12.5;
+        }
+      }
+     @else if($h == 0){
+        #{$acumulador}%{
+            $grado : $grado + 45;
+                transform: rotateZ($grado) scale(1, 1);
+                $acumulador: $acumulador + 12.5;
+        }
+      }
+      @else{
+        #{$acumulador}%{
+            $grado : $grado + 45;
+                transform: rotateZ($grado) scale(2, 2);
+                $acumulador: $acumulador + 12.5;
+            }
+         }
+      }
     }
-    13%{
-        transform: rotateZ(45deg) scale(2,2);
-    
-    }
-    25%{
-        transform:rotateZ(90deg) scale(1,1);
 
-    }
-    38%{
-        transform:rotateZ(135deg) scale(2,2);
-
-    }
-    50%{
-        transform:rotateZ(180deg) scale(1,1);
-
-    }
-    63%{
-        transform:rotateZ(225deg) scale(2,2);
-
-    }
-    75%{
-        transform:rotateZ(270deg) scale(1,1);
-
-    }
-    78%{
-        transform:rotateZ(315deg) scale(2,2);
-
-    }
-    100%{
-        transform:rotateZ(360deg) scale(1,1);
-
-    }
-    
-}
 
 
 
@@ -77,12 +68,14 @@ main{
         margin-bottom: 32px;
         font-size: 40px;
         font-weight: 500;
-        @media (max-width:575px) {
+        @media (max-width:1199px) {
             margin:0;
             text-align: center;
             margin: 32px 0;
         }
-    }
+        @media (min-width:1200px) {
+            text-align: left;
+        }
     >section{
         width: 70%;
         margin: auto;
@@ -91,4 +84,5 @@ main{
             padding: 0;
         }
     }
+}
 }

@@ -1,10 +1,13 @@
 .productos{
     display: flex;
     flex-wrap:wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     @media (max-width:575px) {
         justify-content: center;
     }
-    @media(min-width:991px){
+    @media(min-width:575px) and (max-width:991px){
         padding-left: 0;
         justify-content: center;
     }

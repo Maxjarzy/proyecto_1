@@ -76,6 +76,9 @@
                 margin: 8px 0;
             }
         }
+        @media(max-width:575px){
+            background-color: #e6e6e6;
+        }
  }
  >.formulario__boton{
     @include boton;

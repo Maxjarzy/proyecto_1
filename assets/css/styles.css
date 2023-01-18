@@ -889,6 +889,11 @@ footer > div .footer__logo {
     margin: 8px 0;
   }
 }
+@media (max-width: 575px) {
+  .formulario > .formulario__fieldset {
+    background-color: #e6e6e6;
+  }
+}
 .formulario > .formulario__boton {
   background-color: #e1261c;
   border-radius: 5px;

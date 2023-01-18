@@ -32,6 +32,9 @@
             &::placeholder{
                 text-align: center;
             }
+            @media(max-width:575px){
+                background-color: #e6e6e6;
+            }
         }
         >.formulario__contraseña{
             margin: 20px 0;
@@ -41,6 +44,9 @@
             border: 1px solid black;
             &::placeholder{
                 text-align: center;
+            }
+            @media(max-width:575px){
+                background-color: #e6e6e6;
             }
         }
      }

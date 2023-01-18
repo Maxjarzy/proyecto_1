@@ -38,7 +38,8 @@ header{
             @media (max-width:575px) {
                 display: block;
                 font-size: 40px;
-                color: black;
+                width: 40px;
+                color: $colorFondo;
                 margin: auto 0 auto 32px ;
                 &:hover + ul{
                     left:0;
@@ -68,7 +69,7 @@ header{
                 z-index: 100;
                 width: 50vw;
                 height: 100vh;
-                margin-top: 48px;
+                margin-top: 50px;
                 transition: 0.5s ease-in;
                 background-image: url(../../assets/img/fondo_lista.jpg);
                 background-size: cover;
@@ -124,9 +125,17 @@ header{
                     padding: 10px 32px;
                     color: black;
                     text-decoration: none;
+                    @media (max-width:575px) {
+                        color:$colorFondo;
+                        font-weight: 100;
+                        font-size: 20px;
+                    }
                     &:hover{
                         background-color: $colorLetra;
-                        color:white
+                        color:white;
+                        @media (max-width:575px) {
+                            background-color: rgba(0, 0, 0, 0.356);
+                        }
                     }
                     @media(min-width:576px) and (max-width:991px){
                     display: flex;

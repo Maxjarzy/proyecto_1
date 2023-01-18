@@ -55,12 +55,13 @@
 
 
 
-
 main{
     min-height: 600px;
-    padding: 8px 8px; 
+    padding: 8px 8px 100px 8px; 
     @media (max-width:575px){
         min-height: 100vh;
+        background-color: $colorFondo;
+
     }
     >h1{
         margin-left: 320px;

@@ -80,7 +80,8 @@ header > nav > .menu {
   header > nav > .menu {
     display: block;
     font-size: 40px;
-    color: black;
+    width: 40px;
+    color: #dedede;
     margin: auto 0 auto 32px;
   }
   header > nav > .menu:hover + ul {
@@ -111,7 +112,7 @@ header > nav > ul {
     z-index: 100;
     width: 50vw;
     height: 100vh;
-    margin-top: 48px;
+    margin-top: 50px;
     transition: 0.5s ease-in;
     background-image: url(../../assets/img/fondo_lista.jpg);
     background-size: cover;
@@ -219,9 +220,21 @@ header > nav > ul > li > a {
   color: black;
   text-decoration: none;
 }
+@media (max-width: 575px) {
+  header > nav > ul > li > a {
+    color: #dedede;
+    font-weight: 100;
+    font-size: 20px;
+  }
+}
 header > nav > ul > li > a:hover {
   background-color: black;
   color: white;
+}
+@media (max-width: 575px) {
+  header > nav > ul > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
 }
 @media (min-width: 576px) and (max-width: 991px) {
   header > nav > ul > li > a {
@@ -294,11 +307,12 @@ header > nav > ul > li:first-child {
 }
 main {
   min-height: 600px;
-  padding: 8px 8px;
+  padding: 8px 8px 100px 8px;
 }
 @media (max-width: 575px) {
   main {
     min-height: 100vh;
+    background-color: #dedede;
   }
 }
 main > h1 {
@@ -333,7 +347,7 @@ main > h1 > section {
 
 footer {
   height: 150px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 @media (max-width: 575px) {
   footer {
@@ -371,9 +385,12 @@ footer > div > .footer__redes {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin-top: 30px;
 }
 footer > div > .footer__redes > p {
   text-align: center;
+  color: #dedede;
+  margin-top: 16px;
 }
 @media (max-width: 575px) {
   footer > div > a {
@@ -387,7 +404,7 @@ footer > div > .footer__redes > p {
 }
 footer > div a {
   text-decoration: none;
-  color: #DBDBDB;
+  color: #dedede;
   width: fit-content;
   padding: 8px;
 }
@@ -426,6 +443,11 @@ footer > div .footer__logo {
   --bs-card-border-radius: 0;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
   z-index: 0;
+}
+@media (max-width: 575px) {
+  .inicio__section > .card {
+    background-color: #e6e6e6;
+  }
 }
 .inicio__section > .card > .card__porqueHacemos {
   flex-direction: row-reverse;
@@ -507,6 +529,11 @@ footer > div .footer__logo {
   align-items: center;
   margin-right: 16px;
   margin-bottom: 32px;
+}
+@media (max-width: 575px) {
+  .productos > .productos__tarjeta {
+    background-color: #e6e6e6;
+  }
 }
 .productos > .productos__tarjeta > .productos__tarjeta_separacion {
   margin: 8px;
@@ -708,6 +735,11 @@ footer > div .footer__logo {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.418);
   z-index: 0;
 }
+@media (max-width: 575px) {
+  .section__recorrido > .card {
+    background-color: #e6e6e6;
+  }
+}
 @media (min-width: 575px) and (max-width: 991px) {
   .section__recorrido > .card > .row {
     flex-direction: column;
@@ -806,6 +838,11 @@ footer > div .footer__logo {
 .formulario > div > .formulario__email::placeholder {
   text-align: center;
 }
+@media (max-width: 575px) {
+  .formulario > div > .formulario__email {
+    background-color: #e6e6e6;
+  }
+}
 .formulario > div > .formulario__contraseña {
   margin: 20px 0;
   width: 100%;
@@ -815,6 +852,11 @@ footer > div .footer__logo {
 }
 .formulario > div > .formulario__contraseña::placeholder {
   text-align: center;
+}
+@media (max-width: 575px) {
+  .formulario > div > .formulario__contraseña {
+    background-color: #e6e6e6;
+  }
 }
 .formulario > .formulario__fieldset {
   width: 80%;
@@ -933,6 +975,11 @@ footer > div .footer__logo {
 .contacto > form > label > input::placeholder {
   text-align: center;
 }
+@media (max-width: 575px) {
+  .contacto > form > label > input {
+    background-color: #e6e6e6;
+  }
+}
 .contacto > form > label > textarea {
   width: 100%;
   height: 200px;
@@ -941,6 +988,11 @@ footer > div .footer__logo {
 }
 .contacto > form > label > textarea::placeholder {
   text-align: center;
+}
+@media (max-width: 575px) {
+  .contacto > form > label > textarea {
+    background-color: #e6e6e6;
+  }
 }
 .contacto > form > .contacto__boton {
   background-color: #e1261c;

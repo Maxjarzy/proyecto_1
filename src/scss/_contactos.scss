@@ -55,6 +55,9 @@
                 &::placeholder{
                     text-align: center;
                 }
+                @media(max-width:575px){
+                    background-color: #e6e6e6;
+                }
             }
             >textarea{
                 width: 100%;
@@ -63,6 +66,9 @@
                 border: 1px solid black;
                 &::placeholder{
                     text-align: center;
+                }
+                @media(max-width:575px){
+                    background-color: #e6e6e6;
                 }
             }
         }

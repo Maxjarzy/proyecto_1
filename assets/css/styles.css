@@ -391,6 +391,7 @@ footer > div > .footer__redes > p {
   text-align: center;
   color: #dedede;
   margin-top: 16px;
+  font-weight: 100;
 }
 @media (max-width: 575px) {
   footer > div > a {
